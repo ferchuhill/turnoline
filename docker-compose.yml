@@ -15,6 +15,8 @@ services:
   mongo:
     image: mongo:4.2
     restart: always
+    volumes:
+      - ${MONGO_VOLUMEN}:/data/db:cached
     ports:
       - 27017:27017
     environment:
