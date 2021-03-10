@@ -30,7 +30,7 @@ export default {
   // graphQLPath: '/graphql',
   // playgroundPath: '/playground',
   liveQuery: {
-    classNames: [],
+    classNames: ['User','Organization'],
     redisURL: process.env.REDIS_DSN,
   },
   protectedFields: {

@@ -69,5 +69,5 @@ const httpServer = http.createServer(app);
 httpServer.listen(port, () => console.log(`Server running on ${serverURL}`));
 ParseServer.createLiveQueryServer(httpServer, {
   redisURL: liveQuery.redisURL,
-  classNames: ['DeviceMessage', 'Sensor'],
+  classNames: ['User', 'Organization'],
 });
